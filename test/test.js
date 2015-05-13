@@ -14,5 +14,9 @@ test("defaults", function (t) {
     ignoreCase: true
   }), false)
   t.equal(parseBool(undefined), undefined)
+
+  t.equal(parseBool.not("true"), false)
+  t.equal(parseBool.not("false"), true)
+  t.equal(parseBool.not("maybe"), "maybe")
   t.end()
 })

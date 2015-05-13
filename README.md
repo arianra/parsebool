@@ -13,16 +13,22 @@ npm install parsebool
 
 ```js
 var parseBool = require("parsebool")
+```
+
+```js
 parseBool("true")   // => true
 parseBool("false")  // => false
 parseBool("maybe")  // => "maybe"
 
-parseBool("TRUE", {
-  ignoreCase: true
-})  // => true
-parseBool("False", {
-  ignoreCase: true
-})  // => false
+// Ignore Case
+parseBool("TRUE", { ignoreCase: true })   // => true
+parseBool("False", { ignoreCase: true })  // => false
+
+// Negate the value!
+parseBool.not("false")  // => true
+parseBool.not("true")   // => false
+parseBool.not("maybe")  // => "maybe"
+
 ```
 
 # License
