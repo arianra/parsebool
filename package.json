@@ -1,0 +1,28 @@
+{
+  "name": "parsebool",
+  "version": "0.0.1",
+  "description": "parseBool",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run tape | tspec",
+    "tape": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bucaran/parsebool.git"
+  },
+  "keywords": [
+    "boolean",
+    "parse"
+  ],
+  "author": "Jorge Bucaran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bucaran/parsebool/issues"
+  },
+  "homepage": "https://github.com/bucaran/parsebool#readme",
+  "devDependencies": {
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0"
+  }
+}
